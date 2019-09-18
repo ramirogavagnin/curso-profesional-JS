@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Scope</title>
+    </head>
+    <body>
+        <a href="./index.html">Go back</a>
+        <h2><em>Abre la consola</em></h2>
+        <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+        <script>
+            // var message = 'Hola Mundo!'
+            // var $ = function(message) {
+            //     console.log(`Say: ${message}`)
+            // }
+            function printNumbers() {
+                for (let i = 0; i < 10; i++) {
+                    setTimeout(function() {
+                        console.log(i)
+                    }, 100)
+                    console.log(i, 'síncrono')
+                }
+            }
+
+            printNumbers()
+        </script>
+    </body>
+</html>
